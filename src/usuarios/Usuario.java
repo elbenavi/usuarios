@@ -19,9 +19,7 @@ public class Usuario {
 		this.contrasena = contrasena;
 		nombre = "Maria";
 		edad = 20;
-	}
-	
-	
+	}		
 
 	public Usuario(String usuario, String contrasena, String nombre) {		
 		this.usuario = usuario;
@@ -36,14 +34,45 @@ public class Usuario {
 		this.nombre = nombre;
 		this.edad = edad;
 	}
+	
+	public String getUsuario() {
+		return usuario;
+	}
+	
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	
+	public String getContrasena() {
+		return contrasena;
+	}
+
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
 
 	@Override
 	public String toString() {
 		return "Usuario [usuario=" + usuario + ", contrasena=" + contrasena + ", nombre=" + nombre + ", edad=" + edad
 				+ "]";
 	}
-	
-	
+		
 	public static Usuario init() {
 		return new Usuario();
 	}
